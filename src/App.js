@@ -9,11 +9,16 @@ export default function App() {
 				<a
 					href="https://github.com/roxannearriola/react-weather"
 					target="_blank"
+					rel="noreferrer"
 				>
 					open-sourced on GitHub
 				</a>{" "}
 				and{" "}
-				<a href="https://eager-joliot-601a25.netlify.app/" target="_blank">
+				<a
+					href="https://eager-joliot-601a25.netlify.app/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					hosted on Netlify
 				</a>
 				.
