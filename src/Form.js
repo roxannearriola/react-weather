@@ -5,8 +5,8 @@ import "./Form.css";
 export default function Form() {
 	return (
 		<div className="Form">
-			<form className="row">
-				<div className="col-6">
+			<form className="row mb-5">
+				<div className="col-8">
 					<input
 						type="search"
 						className="form-control"
@@ -15,10 +15,8 @@ export default function Form() {
 					/>
 				</div>
 
-				<div className="col-2">
-					<button type="submit" className="btn btn-primary">
-						Search
-					</button>
+				<div className="col-4">
+					<input type="submit" value="Search" className="btn btn-light w-100" />
 				</div>
 			</form>
 		</div>

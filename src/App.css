@@ -1,0 +1,11 @@
+.App {
+	font-family: "Lora", serif;
+	margin: 30px auto;
+	max-width: 400px;
+	text-align: center;
+}
+
+.App footer {
+	color: #6c757d;
+	font-size: 11px;
+}

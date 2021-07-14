@@ -13,9 +13,13 @@ export default function Weather() {
 				width="65px"
 			/>
 			<h3>Broken Clouds</h3>
-			<h2>21°C</h2>
-			<ul>
-				<li>Montreal</li>
+			<br />
+			<span className="temperature">21</span>
+			<span className="unit">°C</span>
+			<ul className="mt-1">
+				<li>
+					<strong>Montreal</strong>
+				</li>
 				<li>Monday, July 12 09:54</li>
 				<li>Humidity: 78%, Wind: 1 km/h</li>
 			</ul>

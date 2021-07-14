@@ -8,9 +8,8 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				<h1>Weather App</h1>
 				<Weather />
-				<footer>
+				<footer className="mt-2">
 					This project was coded by Roxanne A. and is{" "}
 					<a
 						href="https://github.com/roxannearriola/react-weather"
