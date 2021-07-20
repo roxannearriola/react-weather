@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import Form from "./Form";
+import FormattedDate from "./FormattedDate";
+
 import axios from "axios";
 import Loader from "react-loader-spinner";
-import Form from "./Form";
 
 import "./Weather.css";
 
@@ -14,7 +16,7 @@ export default function Weather(props) {
 			description: response.data.weather[0].description,
 			temperature: response.data.main.temp,
 			city: response.data.name,
-			date: "Monday, July 12 09:54",
+			date: new Date(response.data.dt * 1000),
 			humidity: response.data.main.humidity,
 			wind: response.data.wind.speed,
 		});
@@ -39,7 +41,9 @@ export default function Weather(props) {
 					<li>
 						<strong>{weatherData.city}</strong>
 					</li>
-					<li>{weatherData.date}</li>
+					<li>
+						<FormattedDate date={weatherData.date} />
+					</li>
 					<li>
 						Humidity: {weatherData.humidity}%, Wind:{" "}
 						{Math.round(weatherData.wind)} km/h
