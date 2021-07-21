@@ -28,7 +28,7 @@ export default function Weather(props) {
 	function handleResponse(response) {
 		setWeatherData({
 			ready: true,
-			iconUrl: "https://ecstatic-haibt-c5d4d7.netlify.app/img/04d.png",
+			iconUrl: `https://ecstatic-haibt-c5d4d7.netlify.app/img/${response.data.weather[0].icon}.png`,
 			description: response.data.weather[0].description,
 			temperature: response.data.main.temp,
 			city: response.data.name,
