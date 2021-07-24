@@ -1,0 +1,19 @@
+.WeatherForecast-day {
+	font-size: 15px;
+	opacity: 0.8;
+}
+
+.WeatherForecast-max,
+.WeatherForecast-min {
+	font-family: "Lora", serif;
+	font-size: 13px;
+}
+
+.WeatherForecast-max {
+	font-weight: bolder;
+	margin-right: 5px;
+}
+
+.WeatherForecast-min {
+	opacity: 0.8;
+}
