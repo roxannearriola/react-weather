@@ -29,13 +29,14 @@ export default function Weather(props) {
 	function handleResponse(response) {
 		setWeatherData({
 			ready: true,
-			iconUrl: `https://ecstatic-haibt-c5d4d7.netlify.app/img/${response.data.weather[0].icon}.png`,
+			icon: response.data.weather[0].icon,
 			description: response.data.weather[0].description,
 			temperature: response.data.main.temp,
 			city: response.data.name,
 			date: new Date(response.data.dt * 1000),
 			humidity: response.data.main.humidity,
 			wind: response.data.wind.speed,
+			coordinates: response.data.coord,
 		});
 	}
 
